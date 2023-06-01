@@ -7,11 +7,22 @@
     <title>Document</title>
 </head>
 <body>
+<form method="POST">
+        
+        <input type="number" name="soma">
+        <button type="submit" name="Verificar">Converta</button>
+    </form>
+
     <?php
 
-$valor =3
+$n;
 
-$valor **2
+if(isset($_POST["Verificar"])){
+    $n = $_POST["soma"];
+$resultado = ($n**2);
+}
+
+echo "O número ". $n . " ao quadrado é " . $resultado;
 
 ?>
 </body>
